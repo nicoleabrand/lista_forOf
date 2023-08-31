@@ -7,6 +7,13 @@
 
     //ENTRADA
     let listaDeNomes = ["Amanda", "Eduardo", "Fábio", "Evelin", "César", "José", "Ivo", "Eva", "Otávio", "Inez", "Osmar", "Ulisses"];
+    let nomesvogais = [];
+    for (const nomes of listaDeNomes) {
+        if(nomes[0] == "A" || nomes[0] == "E" || nomes[0] == "I" || nomes[0] == "O" || nomes[0] == "U" ) {
+            nomesvogais.push(nomes)
+        }
+    }
+    alert(`Os nomes que iniciam com vogal são: ${nomesvogais.sort().join(", ")}`)
     //PROCESSAMENTO
 
     //SAÍDA

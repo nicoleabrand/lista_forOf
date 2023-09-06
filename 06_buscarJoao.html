@@ -8,9 +8,9 @@
     //ENTRADA
     let listaDeNomes = ["João Pedro", "Gabriel José", "Ulisses Joao", "Pedro Henrique", "João da Silva", "João Henrique", "Alisson João"];
     let nomesJoao = [];
-    for (const Joao of nomesJoao) {
-        if (Joao=="João" || Joao== "João") {
-            nomesJoao.push(Joao)
+    for (const Joao of listaDeNomes) {
+        if (Joao.includes("João")||Joao.includes("Joao")) {
+            nomesJoao.push(Joao);
         }
     alert(`A lista de nomes é: ${nomesJoao.join(", ")}`)
     }

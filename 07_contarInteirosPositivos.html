@@ -8,9 +8,20 @@
     //ENTRADA
     let listaDeNumeros = [1, 2.5, -3, 4, 8.9, 4.789, -25.6, 42];
 
-    //PROCESSAMENTO
+    let numeros = 0;
+    let numerosInPos = [];
 
+    for (const numero of listaDeNumeros) {
+        const sinal = Math.sign(numero)
+        if (sinal == 1) {
+            if (Number.isInteger(numero)) {
+                numeros++;
+                numerosInPos.push(numero);
+            }
+        }
+    }
 
-    //SAÍDA
+    alert(`Foram localizados ${numeros} números, são eles: ${numerosInPos.join(", ")}`);
+
 
 </script>

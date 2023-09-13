@@ -12,16 +12,11 @@
     let numerosInPos = [];
 
     for (const numero of listaDeNumeros) {
-        const sinal = Math.sign(numero)
-        if (sinal == 1) {
-            if (Number.isInteger(numero)) {
-                numeros++;
+        if (numero>0 && Number.isInteger(numero)) {
                 numerosInPos.push(numero);
             }
         }
-    }
-
-    alert(`Foram localizados ${numeros} números, são eles: ${numerosInPos.join(", ")}`);
+    alert(`Foram localizados ${numerosInPos.length} números, são eles: ${numerosInPos.join(", ")}`);
 
 
 </script>
